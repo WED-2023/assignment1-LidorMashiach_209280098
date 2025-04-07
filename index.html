@@ -109,10 +109,10 @@
   <section id="playlist">
     <h2>Avatar Vibes</h2>
     <p>
-      A blend of calm, dramatic, and epic tunes from my journey — welcome to the soundtrack of the Avatar world.
+      A blend of calm, dramatic, and epic tunes from my journey — Welcome to the soundtrack of the Avatar world.
     </p>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/msFftvOL2Hw?si=KP6iZy712K5Xf4Fe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+   <!--YouTube PlayList Embedded Code-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=uBSAuEPOFPld1A0C&amp;list=PLrLjm5jGKwvNppkPSaOBWPjSPc0xferdv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
   
   <section id="like">
@@ -137,20 +137,110 @@
     
       <p>
         Want to revisit the Avatar site later or share it with a friend?  
-        Just scan this QR code — it’ll take you straight to my world.
+        Just scan this QR code — it'll take you straight to my world.
       </p>
     
-      <img src="Images/avatar_qr.png" alt="QR Code to Avatar Website" class="qr-img">
-    </section>
+      <img src="QR/avatar_qr.png" alt="QR Code to Avatar Website" class="qr-img">
+  </section>
     
   
   <section id="qa">
     <h2>Ask the Avatar</h2>
+    
+    <p><b>Q:</b> Can you really bend all four elements?<br>
+      <b>A:</b> Yep — but it took a while. Earth was the hardest... and fire was the scariest.
+    </p>
+    
+    <p><b>Q:</b> Is Appa your pet?<br>
+        <b>A:</b> He's not my pet — he's my sky brother. Also, he snores louder than a badger-mole.
+    </p>
+    
+    <p><b>Q:</b> What's your favorite food?<br>
+        <b>A:</b> Anything vegetarian — but if you've never tried fire flakes, you're missing out.
+    </p>
+    
+    <p><b>Q:</b> How do you stay so calm?<br>
+        <b>A:</b> Deep breaths, meditation... and gliding over the ocean at sunset.
+    </p>
+    
+    <p><b>Q:</b> Who's your best friend?<br>
+        <b>A:</b> That's tough. I have an amazing team — Katara, Sokka, Toph, Zuko, Momo, and of course, Appa.
+    </p>
+
+    <hr>
+    <p>
+      Okay, enough questions for now — time to answer the one from the Fire Nation Ministry of Web Development 🧱
+      <br>For the next question, I'll switch to Hebrew — just this once! Then it's back to the Four Nations… in English 😉📜
+    </p>
+    
+    <div dir = "rtl" lang ="he">
+      <!--rtl == Right To Left. Because Now We Switching To Hebrew Language -->
+      <p><b>שאלה:</b><br>
+        על סמך העקרונות שלמדנו בכיתה, ענו על השאלות הבאות:
+        <ol>
+          <li>פרטו שלושה הבדלים עיקריים בין web2, web1 ו - web3. היעזרו בחומר שנלמד בהרצאות ובאינטרנט.</li>
+          <li>הסבירו את ההבדלים שצוינו בשאלה 1 על ידי דוגמה של תרחיש שימוש (use case)<br>לדוגמה: חיפוש השאילתה <i>"תופעות לוואי של תרופות"</i> ייראה בצורה מסוימת ב  -web1 ובצורה אחרת ב - web3.</li>
+        </ol>
+      </p>
+    
+      <p><b>תשובה:</b><br>
+        עניתי על השאלה הזו במסגרת השיעור, ולכן אצרף טבלה העונה על שני הסעיפים לעיל:
+      </p>
+    </div>
+  
+    <img src="Q&A Answer/Webs_Q&A.jpg" alt="תשובה לשאלת ההשוואה בין web1 web2 ו־web3" class="qa-img">
   </section>
   
   <section id="contact">
     <h2>Reach the Avatar</h2>
+  
+    <!-- Opening sentence with Avatar tone -->
+    <p>Have a question, a compliment, or just want to say <i>yip yip</i>? Send me a message below!</p>
+  
+    <form>
+      <!--Form Of Mail And Message-->
+      
+      <!--User Email Input-->
+      <label for="email">Your Email:</label><br>
+      <!--PlaceHolder For Nice Visualization-->
+      <!--Required Because the Users Can't Send the Form Without a Text-->
+      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+  
+      <!--User Message Input-->
+      <label for="message">Your Message:</label><br>
+      <!--PlaceHolder For Nice Visualization-->
+      <!--Required Because the Users Can't Send the Form Without a Text-->
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  
+      <!--Emoji Buttons That Will Be Added To The Message-->
+      <div class="emoji-container">
+        <label>Add an Emoji:</label><br>
+        <button type="button" class="emoji-btn">😊</button>
+        <button type="button" class="emoji-btn">😄</button>
+        <button type="button" class="emoji-btn">🌀</button>
+        <button type="button" class="emoji-btn">😢</button>
+        <button type="button" class="emoji-btn">💨</button>
+        <button type="button" class="emoji-btn">🐾</button>
+        <button type="button" class="emoji-btn">🍉</button>
+      </div>
+  
+      <br>
+  
+      <!--Submit Button-->
+      <button type="submit">Send Message</button>
+    </form>
+    
+    <div class="contact-details">
+      <h3>Additional Contact Info</h3>
+      <p><b>Location:</b> Southern Air Temple (follow the flying bison 🐾)</p>
+      <p><b>Available:</b> When I'm not meditating, gliding, or saving the world</p>
+      <p><b>Response time:</b> Varies. Sometimes I'm in the Spirit World ⏳</p>
+      <p><b>Prefer smoke signals over email?</b> Just light a fire — Zuko will find me 🔥</p>
+    </div>
+    
   </section>
+  
+  
   
 </body>
 
