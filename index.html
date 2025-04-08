@@ -13,17 +13,18 @@
 <body>
   <nav id="navbar">
     <!-- Navigation bar - the buttons match the theme of the Avatar -->
-    <a href="#about">About the Avatar</a> |
-    <a href="#photos">My Airbender Gallery</a> |
-    <a href="#playlist">Avatar Vibes</a> |
-    <a href="#like">Support the Sky Bison</a> |
-    <a href="#qrcode">Scan Me</a> |
-    <a href="#qa">Ask the Avatar</a> |
+    <a href="#about">About the Avatar</a> 
+    <a href="#photos">My Airbender Gallery</a> 
+    <a href="#playlist">Avatar Vibes</a> 
+    <a href="#like">Support the Sky Bison</a> 
+    <a href="#qrcode">Scan Me</a> 
+    <a href="#qa">Ask the Avatar</a> 
     <a href="#contact">Reach the Avatar</a>
   </nav>
-  <br><br><br>
+  
   <section id="about">
     <h2>About the Avatar</h2>
+    <div class="about-inner">
     <p>     <!-- Opening paragraph - a concrete explanation of why Avatar Aang is considered the Golden Age -->
       Hi there! I'm Aang — an Airbender, a vegetarian, and... well, the Avatar.
       <br>I was born in the Southern Air Temple, raised by monks, and trained in the ancient ways of Air Nomads.
@@ -34,13 +35,13 @@
     </p>
 
     <p> <!-- The role of the Avatar -->
-      <br>As the Avatar, I have the unique ability to bend all four elements: <span class="icons">air<img src ="Icons/Air_Nation_Icon.png" alt="Air Nation Icon">, water<img src ="Icons/Water_Nation_Icon.jpg" alt="Water Nation Icon">, earth<img src ="Icons/Earth_Nation_Icon.jpg" alt="Earth Nation Icon">, and fire<img src ="Icons/Fire_Nation_Icon.jpg" alt="Fire Nation Icon"></span>.
+      As the Avatar, I have the unique ability to bend all four elements: <span class="icons">air<img src ="Icons/Air_Nation_Icon.png" alt="Air Nation Icon">, water<img src ="Icons/Water_Nation_Icon.jpg" alt="Water Nation Icon">, earth<img src ="Icons/Earth_Nation_Icon.jpg" alt="Earth Nation Icon">, and fire<img src ="Icons/Fire_Nation_Icon.jpg" alt="Fire Nation Icon"></span>.
       <br>My job is to maintain balance in the world — between people, nations, and nature itself.
       <br>It's not always easy... but <b>I believe peace is always possible</b >. Violence isn't the answer.
     </p>
 
     <p><!-- The abilities of the Avatar -->
-      <br>But being the Avatar isn't just about bending elements.
+      But being the Avatar isn't just about bending elements.
       <br>I'm also the bridge between the physical world and the Spirit World.
       <br>I carry the wisdom and experiences of all my past lives — Avatars who came before me, like Avatar Roku and Avatar Kyoshi.
       <br>When I enter the Avatar State, I can channel their power and knowledge, and sometimes even speak with the dead.
@@ -48,12 +49,13 @@
     </p>
 
     <p><!-- The Avatar's family -->
-      <br>I travel with my loyal flying bison, Appa, and my curious little lemur, Momo.
+      I travel with my loyal flying bison, Appa, and my curious little lemur, Momo.
       <br>They're more than pets — they're my family.
     </p>
 
-    <p> <!-- The Avatar's hobbies -->
-      <br>When I'm not out saving the world or gliding through the clouds, I enjoy the little things:
+    <div class="about-block"> <!-- The Avatar's hobbies -->
+      When I'm not out saving the world or gliding through the clouds, I enjoy the little things:
+     
       <ul>
         <li> eating (a lot)</li>
         <li> meditating</li>
@@ -61,10 +63,10 @@
         <li> meeting new friends </li>
         <li> occasionally playing a mean game of airball.</li>
       </ul>
-    </p>
+    </div>
 
-    <p><!-- The Avatar's close friends -->
-      <br>Throughout my journey, I've been lucky to be surrounded by people who shaped who I am.
+    <div class="about-block">  <!-- The Avatar's close friends -->
+      Throughout my journey, I've been lucky to be surrounded by people who shaped who I am.
       <br>Here are some of the most important figures in my life:
       <ul>
         <li>Katara - a compassionate and powerful waterbender. She's the one who found me frozen in the iceberg and brought me back to the world. <br>She's also one of the greatest healers and bloodbenders alive — and more than just a friend.</li>
@@ -75,14 +77,14 @@
         <li>Guru Pathik - the one who helped me open my chakras (well... almost all of them).</li>
         <li>Monk Gyatso - my mentor, my teacher, and like a father to me.</li>
       </ul>
-    </p>
+    </div>
     
     <p> <!-- Closing paragraph -->
-      <br>Eventually, things did calm down. The war ended, the nations began to heal, and I even started a family.
+      Eventually, things did calm down. The war ended, the nations began to heal, and I even started a family.
       <br>My son, Tenzin, went on to become a great airbending master.
       <br>If you want to know more about what happened next... you'll have to visit the <i>Legend of Korra</i> section of the Spirit Library.
     </p>
-
+</div>
   </section>
   
   <section id="photos">
@@ -131,7 +133,8 @@
   <section id="playlist">
     <h2>Avatar Vibes</h2>
     <p>
-      A blend of calm, dramatic, and epic tunes from my journey — Welcome to the soundtrack of the Avatar world.
+      A blend of calm, dramatic, and epic tunes from my journey
+      <br>Welcome to the soundtrack of the Avatar-World
     </p>
    <!--YouTube PlayList Embedded Code-->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=uBSAuEPOFPld1A0C&amp;list=PLrLjm5jGKwvNppkPSaOBWPjSPc0xferdv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -146,12 +149,15 @@
       Appa says: <i>"Yip yip for a like!"</i>
     </p>
   
-    <img src="Images/Save_The_Bisons!!.jpg" alt="Sky-Bison Babies" class="bison-img">
-  
-    <br><br>
-  
-    <button id="likeButton">💙 Like the Bison!</button>
+    <div class="bison-flex">
+      <img src="Images/Save_The_Bisons!!.jpg" alt="Sky-Bison Babies" class="bison-img">
+      <div class="like-box">
+        <p id="likeCount">0 likes</p>
+        <button id="likeButton">💙 Like the Bison!</button>
+      </div>
+    </div>
   </section>
+  
   
   
   <section id="qrcode">
@@ -159,7 +165,7 @@
     
       <p>
         Want to revisit the Avatar site later or share it with a friend?  
-        Just scan this QR code — it'll take you straight to my world.
+        <br>Just scan this QR code — it'll take you straight to my world
       </p>
     
       <img src="QR/avatar_qr.png" alt="QR Code to Avatar Website" class="qr-img">
@@ -189,26 +195,40 @@
         <b>A:</b> That's tough. I have an amazing team — Katara, Sokka, Toph, Zuko, Momo, and of course, Appa.
     </p>
 
-    <hr>
+    <hr class = "seperate-line">
     <p>
       Okay, enough questions for now — time to answer the one from the Fire Nation Ministry of Web Development 🧱
       <br>For the next question, I'll switch to Hebrew — just this once! Then it's back to the Four Nations… in English 😉📜
     </p>
     
-    <div dir = "rtl" lang ="he">
-      <!--rtl == Right To Left. Because Now We Switching To Hebrew Language -->
-      <p><b>שאלה:</b><br>
-        על סמך העקרונות שלמדנו בכיתה, ענו על השאלות הבאות:
-        <ol>
-          <li>פרטו שלושה הבדלים עיקריים בין web2, web1 ו - web3. היעזרו בחומר שנלמד בהרצאות ובאינטרנט.</li>
-          <li>הסבירו את ההבדלים שצוינו בשאלה 1 על ידי דוגמה של תרחיש שימוש (use case)<br>לדוגמה: חיפוש השאילתה <i>"תופעות לוואי של תרופות"</i> ייראה בצורה מסוימת ב  -web1 ובצורה אחרת ב - web3.</li>
-        </ol>
-      </p>
+    <div dir="rtl" lang="he" class="hebrew-section">
+      <div class="hebrew-question">
+        <p><b>שאלה:</b></p>
+        <p>על סמך העקרונות שלמדנו בכיתה, ענו על השאלות הבאות:</p>
+      </div>
     
-      <p><b>תשובה:</b><br>
-        עניתי על השאלה הזו במסגרת השיעור, ולכן אצרף טבלה העונה על שני הסעיפים לעיל:
-      </p>
+      <div class="hebrew-list">
+        <ol>
+          <li>
+            פרטו שלושה הבדלים עיקריים בין web2, web1 ו־web3.
+            היעזרו בחומר שנלמד בהרצאות ובאינטרנט.
+          </li>
+          <li>
+            הסבירו את ההבדלים שצוינו בשאלה 1 על ידי דוגמה של תרחיש שימוש (use case).<br>
+            לדוגמה: חיפוש השאילתה <i>"תופעות לוואי של תרופות"</i>
+            ייראה בצורה מסוימת ב־web1 ובצורה אחרת ב־web3.
+          </li>
+        </ol>
+      </div>
+    
+      <div class="hebrew-answer">
+        <p><b>תשובה:</b></p>
+        <p>
+          עניתי על השאלה הזו במסגרת השיעור, ולכן אצרף טבלה העונה על שני הסעיפים לעיל:
+        </p>
+      </div>
     </div>
+    
   
     <img src="Q&A Answer/Webs_Q&A.jpg" alt="תשובה לשאלת ההשוואה בין web1 web2 ו־web3" class="qa-img">
   </section>
@@ -221,44 +241,55 @@
   
     <form>
       <!--Form Of Mail And Message-->
-      
-      <!--User Email Input-->
-      <label for="email">Your Email:</label><br>
-      <!--PlaceHolder For Nice Visualization-->
-      <!--Required Because the Users Can't Send the Form Without a Text-->
-      <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
-  
-      <!--User Message Input-->
-      <label for="message">Your Message:</label><br>
-      <!--PlaceHolder For Nice Visualization-->
-      <!--Required Because the Users Can't Send the Form Without a Text-->
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-  
-      <!--Emoji Buttons That Will Be Added To The Message-->
-      <div class="emoji-container">
-        <label>Add an Emoji:</label><br>
-        <button type="button" class="emoji-btn">😊</button>
-        <button type="button" class="emoji-btn">😄</button>
-        <button type="button" class="emoji-btn">🌀</button>
-        <button type="button" class="emoji-btn">😢</button>
-        <button type="button" class="emoji-btn">💨</button>
-        <button type="button" class="emoji-btn">🐾</button>
-        <button type="button" class="emoji-btn">🍉</button>
+      <div class="form-row">
+        <!--User Email Input-->
+        <label for="email">Your Email:</label>
+        <!--PlaceHolder For Nice Visualization-->
+        <!--Required Because the Users Can't Send the Form Without a Text-->
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
       </div>
-  
+
+        <div class="form-row message-group">
+          <!--User Message Input-->
+          <label for="message">Your Message:</label>
+          <div class="message-area">
+            <!--PlaceHolder For Nice Visualization-->
+            <!--Required Because the Users Can't Send the Form Without a Text-->
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        
+            <div class="emoji-container">
+                    <!--Emoji Buttons That Will Be Added To The Message-->
+                
+              <button type="button" class="emoji-btn">😊</button>
+              <button type="button" class="emoji-btn">🤪</button> 
+              <button type="button" class="emoji-btn">😄</button>
+              <button type="button" class="emoji-btn">🌊</button> 
+              <button type="button" class="emoji-btn">🔥</button> 
+              <button type="button" class="emoji-btn">🌪️</button> 
+              <button type="button" class="emoji-btn">🌀</button>
+              <button type="button" class="emoji-btn">💨</button>
+              <button type="button" class="emoji-btn">🐾</button>
+              <button type="button" class="emoji-btn">🍉</button>
+            </div>
+          </div>
+        </div>
       <br>
   
       <!--Submit Button-->
       <button type="submit">Send Message</button>
     </form>
+    <hr class = "seperate-line">
 
     <div class="contact-details">
-      <h3>Additional Contact Info</h3>
-      <p><b>Location:</b> Southern Air Temple (follow the flying bison 🐾)</p>
-      <p><b>Available:</b> When I'm not meditating, gliding, or saving the world</p>
-      <p><b>Response time:</b> Varies. Sometimes I'm in the Spirit World ⏳</p>
-      <p><b>Prefer smoke signals over email?</b> Just light a fire — Zuko will find me 🔥</p>
+      <h3>📬 Additional Contact Info</h3>
+      <ul class="contact-list">
+        <li><b>📍 Location:</b> Southern Air Temple (follow the flying bison 🐾)</li>
+        <li><b>🧘 Available:</b> When I'm not meditating, gliding, or saving the world</li>
+        <li><b>⏳ Response time:</b> Varies. Sometimes I'm in the Spirit World</li>
+        <li><b>🔥 Prefer smoke signals?</b> Just light a fire — Zuko will find me</li>
+      </ul>
     </div>
+    
     
   </section>
   

@@ -1,3 +1,5 @@
+/************************************ Global ******************************************************/
+
 /* Global Style */
 body {
 	background-color: #f0f0e4;
@@ -9,7 +11,7 @@ body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
-  
+
 /*Headers Style*/  
 section h2 {
 	background-color: #dab581;
@@ -20,14 +22,122 @@ section h2 {
 	margin-bottom: 80px;
 	font-size: 48px;
 }
-
+  /********************************** Navigation Bar *****************************/
+/* Navigation Bar Wrapper */
+#navbar {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: rgba(236, 227, 209, 0.85); /* רקע חצי שקוף */
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	padding: 20px 40px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 18px;
+	border-bottom: 2px solid #a35402;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 0px; 
+  }
+  
+ 
+  #navbar a {
+	color: #2b3447;
+	background-color: #eae4d3;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px 16px;
+	border-radius: 12px;
+	border: 1px solid #d1c3ab;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	display: inline-block;
+  }
+  
+ 
+  #navbar a:hover {
+	background-color: #e6d4b6;
+	color: #a35402;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+	transform: translateY(-2px);
+	border-color: #a35402;
+	font-weight: bold;
+  }
+  /************************ About Me***********************/
+#about {
+	padding: 0 20px;
+	margin-top: 60px;
+	margin-bottom: 100px;
+	color: #2b3447;
+	font-size: 20px;
+	line-height: 1.9;
+  }
+  
+  #about h2 {
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 50px;
+  }
+  
+  .about-inner {
+	max-width: 1050px; 
+	margin: 0 auto;
+  }
+  
+  .about-inner p {
+	background-color: #fdfaf5;
+	border-left: 6px solid #deb97f;
+	border-radius: 12px;
+	padding: 20px 26px;
+	margin: 30px 0;
+	transition: background-color 0.3s ease;
+  }
+  
+  .about-inner p:hover {
+	background-color: #f7f0e3;
+  }
+  
+  .about-inner p:first-of-type {
+	margin-top: 0;
+  }
+  
+  .about-block {
+	background-color: #fdfaf5;
+	border-left: 6px solid #deb97f;
+	border-radius: 12px;
+	padding: 20px 26px;
+	margin: 30px 0;
+	transition: background-color 0.3s ease;
+  }
+  
+  .about-block:hover {
+	background-color: #f7f0e3;
+  }
+  
+  .about-block ul {
+	margin-top: 12px;
+	padding-left: 32px;
+	list-style-type: "🔸 ";
+	list-style-position: outside;
+  }
+  
+  .about-block ul li {
+	margin-bottom: 10px;
+	line-height: 1.7;
+  }
+  
+  
+/************************************ Four Nation Icons ******************************************************/
 /*Four Nations Icons Style */
 .icons img {
-	width: 38px;
-	height: 34px;
+	width: 32px;
+	height: 28px;
 	vertical-align: middle;
 	margin-left: 4px;
 }
+/************************************ Gallery ******************************************************/
+
 
 /* Gallery row layout */
 .gallery-row {
@@ -64,3 +174,359 @@ section h2 {
 	transform: scale(1.05);
 	filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
 }
+/************************************ YouTube - PlayList ******************************************************/
+
+
+/* Playlist section layout */
+#playlist {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	padding: 0 40px;
+}
+
+/* Playlist iframe responsiveness */
+#playlist iframe {
+	width: 100%;
+	max-width: 720px;
+	height: 405px;
+	border-radius: 20px;
+	margin-top: 30px;
+}
+
+/************************************ Bisons Support's - Like ******************************************************/
+
+/* Bison section layout */
+#like {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	padding: 0 40px;
+}
+
+/* Bison image styling */
+.bison-img {
+	width: 100%;
+	max-width: 360px;
+	border-radius: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+	object-fit: cover;
+}
+
+#likeButton {
+	background-color: #dab581;
+	color: white;
+	font-size: 24px;
+	padding: 10px 24px;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#likeButton:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+#likeButton:active {
+	transform: scale(0.96);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#likeCount {
+	font-size: 24px;
+	color: #2b3447;
+	margin-bottom: 20px;
+}
+
+.bison-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+/* Small adjustments inside the like box */
+.like-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+/************************************ QR ******************************************************/
+
+/* QR section layout */
+#qrcode {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 80px;
+	padding: 0 40px;
+  }
+  
+  /* QR image styling */
+  .qr-img {
+	width: 100%;
+	max-width: 420px;
+	height: auto;
+	margin-top: 30px;
+	border-radius: 16px;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  }
+
+/************************************ Q&A ******************************************************/
+  
+/* Q&A section layout */
+#qa {
+	margin-top: 100px;
+	padding: 0 40px;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  /* Style for Q/A blocks */
+  #qa > p {
+	margin-bottom: 40px;
+	font-size: 24px;
+	line-height: 1.9;
+	text-align: left;
+	text-indent: 0;
+}
+  
+  /* Style for question */
+  #qa p b:first-of-type {
+	color: #a35402;
+	font-weight: bold;
+	font-size: 26px;
+	display: inline-block;
+	margin-bottom: 10px;
+  }
+  
+  /* Style for answer */
+  #qa p b:nth-of-type(2) {
+	color: #2b3447;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 8px;
+	margin-bottom: 6px;
+  }
+  
+  /* Hebrew block styling */
+  #qa [lang="he"] {
+	direction: rtl;
+	text-align: right;
+	font-size: 24px;
+	line-height: 2;
+	margin-top: 50px;
+  }
+  
+  /* Hebrew question label */
+  #qa [lang="he"] b {
+	color: #8a3200;
+	font-weight: bold;
+	font-size: 26px;
+  }
+  
+  /* Image at the end */
+  .qa-img {
+	width: 100%;
+	max-width: 740px;
+	display: block;
+	margin: 50px auto 0 auto;
+	border-radius: 20px;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Thick separation line between English and Hebrew */
+hr.seperate-line {
+	height: 6px;
+	background-color: #a35402;
+	border: none;
+	border-radius: 4px;
+	margin: 60px auto;
+	max-width: 100%;
+  }
+
+  #qa .hebrew-section {
+	direction: rtl;
+	text-align: right;
+	font-size: 24px;
+	line-height: 2;
+	margin-top: 50px;
+	padding-right: 30px;
+  }
+  
+  #qa .hebrew-section p {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+  
+  #qa .hebrew-question b,
+  #qa .hebrew-answer b {
+	color: #8a3200;
+	font-weight: bold;
+	font-size: 26px;
+  }
+  
+  #qa .hebrew-list ol {
+	padding-right: 40px;
+	margin: 20px 0;
+	line-height: 2;
+  }
+  
+  #qa .hebrew-list li {
+	margin-bottom: 20px;
+  }
+  
+/************************************ Mail and Messages ******************************************************/
+
+/* Arrange each label + input/textarea on one row */
+.form-row {
+	display: flex;
+	align-items: baseline;
+	gap: 20px;
+	margin-bottom: 0px;
+  }
+  
+  .form-row label {
+	font-size: 28px;
+	white-space: nowrap;
+	flex-shrink: 0;
+	margin-top: 6px;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 13px;
+	border: 0px solid #ccc;
+  }
+  
+  .form-row textarea {
+	width: 100%;
+	max-width: 500px;
+	height: 200px;
+	resize: none;
+	padding-top: 52px;
+  }
+
+
+/************************************ EmoGy************************************/
+  /* Container for textarea + emojis */
+.message-group {
+	align-items: flex-start;
+  }
+  
+  /* Position emojis inside the message area */
+  .message-area {
+	position: relative;
+	display: flex;
+  	flex-direction: column;
+  	align-items: flex-start;
+	width: 100%;
+	max-width: 500px;
+  }
+  
+  /* Style emoji container as overlay */
+  .emoji-container {
+	position: absolute;
+	top: 14px; 
+	left: 8px;
+	display: flex;
+	gap: 6px;
+	z-index: 2;
+}
+  
+  /* Emoji button styling */
+  .emoji-btn {
+	background: white;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 20px;
+	padding: 4px 8px;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+  }
+  
+  .emoji-btn:hover {
+	transform: scale(1.2);
+  }
+  /************************************ Send botton **********************************/
+
+  form button[type="submit"] {
+	display: block;
+	margin: 40px auto 0 auto;
+	background: linear-gradient(145deg, #dab581, #c9a267);
+	color: white;
+	font-size: 20px;
+	padding: 12px 30px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+	box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  form button[type="submit"]:hover {
+	transform: scale(1.07);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
+  /************************************ Contact Details ******************************************************/
+  .contact-details {
+	font-size: 20px;
+	color: #444;
+	margin-top: 80px;
+	line-height: 1.8;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .contact-details h3 {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #2b3447;
+  }
+  
+  .contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	color: #555;
+  }
+  
+  .contact-list li {
+	display: inline-block;
+	border-bottom: 1px dashed #aaa; 
+	padding-bottom: 10px; 
+	margin-bottom: 20px;
+	text-indent: -1.2em; 
+	padding-left: 1.2em;  
+  }
+  
+  
+  .contact-list b {
+	color: #2b3447;
+  }
+  
+  .contact-list li:not(:last-child) {
+	border-bottom: 1px dashed #bbb;
+	width: fit-content;
+	padding-bottom: 12px;
+  }
