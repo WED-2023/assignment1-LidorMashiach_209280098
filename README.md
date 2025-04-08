@@ -10,13 +10,15 @@
 
 ## 🌟 Avatar Golden Age Website — README
 
-### 🧙‍♂️ Chosen Character: Avatar Aang  
-The character selected for this project is **Avatar Aang**, the last Airbender and the bridge between worlds.  
-Aang fully represents the **Golden Age** of the Avatar universe for the following reasons:
+### 🧙‍♂️ Chosen Character: Avatar Aang
 
-- He is the **central figure** of the era who brought an end to the Hundred Year War.
-- His journey includes **mastering all four elements**, restoring spiritual balance, and rebuilding society.
-- Aang balances **youthful playfulness** with deep responsibility, embodying both wisdom and legacy.
+This landing page was created as part of an assignment requiring the selection of a character from the "Golden Age" phase of their life.
+
+The character chosen is **Avatar Aang**. While Aang is originally portrayed as a young Air Nomad, his unique timeline—having been frozen in an iceberg for 100 years—means that when he awakens, he is already biologically over a century old. This inherently qualifies him as belonging to the "Golden Age" category, both in age and narrative.
+
+Additionally, the website is written from the perspective of an older Aang, post-series, with full awareness of the events of both *Avatar: The Last Airbender* and *The Legend of Korra*. In the sequel series, Aang is referred to as a historical figure of great influence, further anchoring the project in the intended timeframe.
+
+> **Note:** The entire site is written in first-person, adopting the tone of Avatar Aang himself — as if he were presenting the content directly to the visitor.
 
 ---
 
