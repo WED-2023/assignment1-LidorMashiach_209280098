@@ -265,6 +265,11 @@ section h2 {
 	gap: 20px;
 }
 
+#likeButton.liked {
+	background-color: #a5d6a7; 
+	color: #1b5e20; 
+	font-weight: bold;
+}
 /************************************ QR ******************************************************/
 
 /* QR section layout */
@@ -425,7 +430,7 @@ hr.seperate-line {
   }
 
 
-/************************************ EmoGy************************************/
+/************************************ Emoji ************************************/
   /* Container for textarea + emojis */
 .message-group {
 	align-items: flex-start;
@@ -440,6 +445,35 @@ hr.seperate-line {
 	width: 100%;
 	max-width: 500px;
   }
+  
+/* Character counter – basic styling */
+#charCounter {
+	font-size: 14px;
+	color: #888;
+	margin-top: 6px;
+	align-self: flex-end;
+	margin-right: 4px;
+	transition: color 0.3s ease;
+  }
+  
+  #charCounter.over-limit {
+	color: #a12424;
+	font-weight: bold;
+  }
+  
+  #charCounter.warn-limit {
+	color: #e39b00;
+	font-weight: bold;
+  }
+  
+  @keyframes shake {
+	0% { transform: translateX(0); }
+	25% { transform: translateX(-2px); }
+	50% { transform: translateX(2px); }
+	75% { transform: translateX(-1px); }
+	100% { transform: translateX(0); }
+  }
+  
   
   /* Style emoji container as overlay */
   .emoji-container {
