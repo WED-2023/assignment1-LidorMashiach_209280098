@@ -7,7 +7,7 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	font-size: 32px;
 	line-height: 1.8;
-	padding: 40px 80px;
+	padding: 40px 6vw;
 	max-width: 100%;
 	overflow-x: hidden;
 }
@@ -22,6 +22,21 @@ section h2 {
 	margin-bottom: 80px;
 	font-size: 48px;
 }
+/* To The Mobile  */
+@media (max-width: 768px) {
+	body {
+	  padding: 24px 5vw;
+	  font-size: 22px;
+	  line-height: 1.6;
+	}
+  
+	section h2 {
+	  font-size: 32px;
+	  margin-bottom: 40px;
+	  border-radius: 60px;
+	}
+  }
+  
   /********************************** Navigation Bar *****************************/
 /* Navigation Bar Wrapper */
 #navbar {
@@ -31,7 +46,7 @@ section h2 {
 	background-color: rgba(236, 227, 209, 0.85); /* רקע חצי שקוף */
 	backdrop-filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
-	padding: 20px 40px;
+	padding: 20px 2vw;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -64,25 +79,47 @@ section h2 {
 	border-color: #a35402;
 	font-weight: bold;
   }
+
+  /* TO the Mobile*/
+  @media (max-width: 768px) {
+	#navbar {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 12px 4vw;
+	  gap: 12px;
+	}
+  
+	#navbar a {
+	  font-size: 16px;
+	  padding: 8px 14px;
+	  width: 100%;
+	  max-width: 300px;
+	  text-align: center;
+	}
+  }
+  
   /************************ About Me***********************/
 #about {
-	padding: 0 20px;
 	margin-top: 60px;
 	margin-bottom: 100px;
 	color: #2b3447;
 	font-size: 20px;
 	line-height: 1.9;
   }
-  
-  #about h2 {
+
+  #about > h2 {
 	text-align: center;
 	font-size: 42px;
 	margin-bottom: 50px;
-  }
+	padding: 0 8vw;
+}
+
   
   .about-inner {
 	max-width: 1050px; 
+	width: 100%;
 	margin: 0 auto;
+	padding: 0 4vw;
   }
   
   .about-inner p {
@@ -126,16 +163,53 @@ section h2 {
 	margin-bottom: 10px;
 	line-height: 1.7;
   }
+  /* Mobile */
+  @media (max-width: 768px) {
+	#about > h2 {
+	  font-size: 36px;
+	  padding: 0 4vw;
+	  margin-bottom: 40px;
+	}
+  
+	.about-inner {
+	  padding: 0 5vw;
+	}
+  
+	.about-inner p,
+	.about-block {
+	  padding: 16px 20px;
+	  font-size: 18px;
+	}
+  
+	.about-block ul {
+	  padding-left: 24px;
+	}
+  
+	.about-block ul li {
+	  font-size: 18px;
+	}
+  }
   
   
 /************************************ Four Nation Icons ******************************************************/
 /*Four Nations Icons Style */
 .icons img {
-	width: 32px;
-	height: 28px;
+	width: 2vw;
+	height: auto;
+	max-width: 32px;
 	vertical-align: middle;
 	margin-left: 4px;
 }
+/* Mobile */
+@media (max-width: 768px) {
+	.icons img {
+	  width: 22px;
+	  height: auto;
+	  margin-left: 4px;
+	}
+  }
+  
+
 /************************************ Gallery ******************************************************/
 
 
@@ -146,7 +220,7 @@ section h2 {
 	flex-wrap: wrap;
 	gap: 16px;
 	margin-bottom: 24px;
-	padding: 0 16px;
+	padding: 0 1vw;
 	box-sizing: border-box;
 }
 
@@ -166,7 +240,7 @@ section h2 {
 	max-width: 400px;
 	aspect-ratio: 2 / 3;
 	height: auto;
-	margin: 0 12px;
+	margin: 0;
 }
 
 /* Hover effect */
@@ -174,26 +248,70 @@ section h2 {
 	transform: scale(1.05);
 	filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+	.gallery-row {
+	  gap: 12px;
+	  padding: 0 4vw;
+	}
+  
+	.gallery-row img {
+	  max-width: 90vw;
+	  border-radius: 20px;
+	}
+  
+	.gallery-row.row-middle img.big-img {
+	  max-width: 70vw;
+	}
+  }
+  
 /************************************ YouTube - PlayList ******************************************************/
 
 
 /* Playlist section layout */
 #playlist {
-	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 80px;
-	padding: 0 40px;
+	text-align: center;
+}
+
+#playlist > h2 {
+	font-size: 48px;
+	margin-bottom: 50px;
+	padding: 0 6vw;
 }
 
 /* Playlist iframe responsiveness */
-#playlist iframe {
+.playlist-inner {
+	padding: 0 40px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.playlist-inner iframe {
 	width: 100%;
 	max-width: 720px;
 	height: 405px;
 	border-radius: 20px;
 	margin-top: 30px;
 }
-
+/* Mobile */
+@media (max-width: 600px) {
+	#playlist > h2 {
+	  font-size: 36px;
+	  padding: 0 4vw;
+	}
+  
+	.playlist-inner {
+	  padding: 0 5vw;
+	}
+  
+	.playlist-inner iframe {
+	  height: 240px;
+	}
+  }
+  
 /************************************ Bisons Support's - Like ******************************************************/
 
 /* Bison section layout */
@@ -201,9 +319,19 @@ section h2 {
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 80px;
-	padding: 0 40px;
+}
+#like > h2 {
+	font-size: 48px;
+	margin-bottom: 50px;
+	padding: 0 6vw;
 }
 
+  
+  #like p:first-of-type {
+	margin-top: 16px;
+  }
+  
+  
 /* Bison image styling */
 .bison-img {
 	width: 100%;
@@ -270,6 +398,55 @@ section h2 {
 	color: #1b5e20; 
 	font-weight: bold;
 }
+
+.inner-like {
+	padding: 0 6vw;
+	max-width: 960px;
+	margin: 0 auto;
+  }
+  
+  
+/* Mobile */
+@media (max-width: 600px) {
+	#like > h2 {
+	  font-size: 36px;
+	  padding: 0 8vw;
+	}
+  
+	.inner-like {
+	  padding: 0 8vw;
+	}
+  
+	.bison-img {
+	  max-width: 260px;
+	  margin-top: 20px;
+	  margin-bottom: 20px;
+	}
+  
+	#likeButton {
+	  font-size: 20px;
+	  padding: 8px 20px;
+	}
+  
+	#likeCount {
+	  font-size: 20px;
+	}
+  
+	.bison-flex {
+	  gap: 24px;
+	}
+  
+	.like-box {
+	  gap: 14px;
+	}
+  
+	#like p:first-of-type {
+	  font-size: 18px;
+	  line-height: 1.7;
+	}
+  }
+  
+  
 /************************************ QR ******************************************************/
 
 /* QR section layout */
@@ -277,126 +454,278 @@ section h2 {
 	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 80px;
-	padding: 0 40px;
-  }
-  
-  /* QR image styling */
-  .qr-img {
+}
+
+/* QR title styling */
+#qrcode > h2 {
+	font-size: 48px;
+	margin-bottom: 50px;
+	padding: 0 6vw;
+}
+
+/* Wrapper for QR content */
+.inner-qr {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* QR image styling */
+.qr-img {
 	width: 100%;
 	max-width: 420px;
 	height: auto;
 	margin-top: 30px;
 	border-radius: 16px;
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+	#qrcode > h2 {
+		font-size: 36px;
+		padding: 0 8vw;
+	}
+
+	.qr-img {
+		max-width: 280px;
+		margin-top: 20px;
+	}
+
+	#qrcode p {
+		font-size: 18px;
+		line-height: 1.6;
+		padding: 0 8vw;
+	}
+}
+
+
+
 
 /************************************ Q&A ******************************************************/
-  
+
 /* Q&A section layout */
 #qa {
-	margin-top: 100px;
-	padding: 0 40px;
-	max-width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-  }
-  
-  /* Style for Q/A blocks */
-  #qa > p {
-	margin-bottom: 40px;
-	font-size: 24px;
-	line-height: 1.9;
-	text-align: left;
-	text-indent: 0;
+    margin-top: 100px;
+    padding: 0 ;
+    width: 100%; 
 }
-  
-  /* Style for question */
-  #qa p b:first-of-type {
-	color: #a35402;
-	font-weight: bold;
-	font-size: 26px;
-	display: inline-block;
-	margin-bottom: 10px;
-  }
-  
-  /* Style for answer */
-  #qa p b:nth-of-type(2) {
-	color: #2b3447;
-	font-weight: bold;
-	display: inline-block;
-	margin-top: 8px;
-	margin-bottom: 6px;
-  }
-  
-  /* Hebrew block styling */
-  #qa [lang="he"] {
-	direction: rtl;
-	text-align: right;
-	font-size: 24px;
-	line-height: 2;
-	margin-top: 50px;
-  }
-  
-  /* Hebrew question label */
-  #qa [lang="he"] b {
-	color: #8a3200;
-	font-weight: bold;
-	font-size: 26px;
-  }
-  
-  /* Image at the end */
-  .qa-img {
-	width: 100%;
-	max-width: 740px;
-	display: block;
-	margin: 50px auto 0 auto;
-	border-radius: 20px;
-	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
-  }
 
-  /* Thick separation line between English and Hebrew */
+/* Q&A header styling */
+#qa > h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding: 0 6vw;
+    text-align: center; 
+}
+
+/* Inner content padding for Q&A */
+.qa-inner {
+    padding: 0 6vw; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/* Padding for the English-Hebrew section */
+.english-hebrew {
+    padding: 0 6vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Style for Q/A blocks */
+#qa > p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.9;
+    text-align: left;
+    text-indent: 0;
+}
+
+/* Style for question */
+#qa p b:first-of-type {
+    color: #a35402;
+    font-weight: bold;
+    font-size: 26px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Style for answer */
+#qa p b:nth-of-type(2) {
+    color: #2b3447;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+
+/* Hebrew block styling */
+#qa [lang="he"] {
+    direction: rtl;
+    text-align: right;
+    font-size: 24px;
+    line-height: 2;
+    margin-top: 50px;
+}
+
+/* Hebrew question label */
+#qa [lang="he"] b {
+    color: #8a3200;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* Image at the end */
+.qa-img {
+    width: 100%;
+    max-width: 740px;
+    display: block;
+    margin: 50px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Thick separation line between English and Hebrew */
 hr.seperate-line {
-	height: 6px;
-	background-color: #a35402;
-	border: none;
-	border-radius: 4px;
-	margin: 60px auto;
-	max-width: 100%;
-  }
-
-  #qa .hebrew-section {
-	direction: rtl;
-	text-align: right;
-	font-size: 24px;
-	line-height: 2;
-	margin-top: 50px;
-	padding-right: 30px;
-  }
-  
-  #qa .hebrew-section p {
-	text-align: right;
-	margin-bottom: 20px;
+    height: 6px;
+    background-color: #a35402;
+    border: none;
+    border-radius: 4px;
+    margin: 60px auto;
+    max-width: 100%;
+    padding: 0; 
 }
 
-  
-  #qa .hebrew-question b,
-  #qa .hebrew-answer b {
-	color: #8a3200;
-	font-weight: bold;
-	font-size: 26px;
-  }
-  
-  #qa .hebrew-list ol {
-	padding-right: 40px;
-	margin: 20px 0;
-	line-height: 2;
-  }
-  
-  #qa .hebrew-list li {
-	margin-bottom: 20px;
-  }
-  
+/* Hebrew section layout with proper padding for the content */
+#qa .hebrew-section {
+    direction: rtl; /* Right to left for Hebrew */
+    text-align: right;
+    font-size: 24px;
+    line-height: 2;
+    margin-top: 50px;
+    padding-right: 6vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#qa .hebrew-section p {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Hebrew questions and answers styles */
+#qa .hebrew-question b,
+#qa .hebrew-answer b {
+    color: #8a3200;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#qa .hebrew-list ol {
+    padding-right: 40px;
+    margin: 20px 0;
+    line-height: 2;
+}
+
+#qa .hebrew-list li {
+    margin-bottom: 20px;
+}
+
+/*  Mobile  */
+@media (max-width: 768px) {
+    /* Q&A section layout for mobile */
+    #qa {
+        padding: 0 4vw; /* Less padding for smaller screens */
+    }
+
+    /* Q&A header styling for mobile */
+    #qa > h2 {
+        font-size: 36px; /* Slightly smaller font size for mobile */
+        padding: 0 4vw; /* Adjust padding for smaller screens */
+    }
+
+    /* Inner content padding for Q&A on mobile */
+    .qa-inner {
+        padding: 0 4vw; /* Adjust padding for mobile */
+    }
+
+    /* English-Hebrew section mobile adjustments */
+    .english-hebrew {
+        padding: 0 4vw; /* Less padding for smaller screens */
+    }
+
+    /* Style for Q/A blocks on mobile */
+    #qa > p {
+        font-size: 20px; /* Smaller font size for readability */
+        line-height: 1.6;
+    }
+
+    /* Style for question on mobile */
+    #qa p b:first-of-type {
+        font-size: 22px; /* Slightly smaller size for questions */
+    }
+
+    /* Style for answer on mobile */
+    #qa p b:nth-of-type(2) {
+        font-size: 22px; /* Slightly smaller size for answers */
+    }
+
+    /* Adjusting the Hebrew block layout for mobile */
+    #qa [lang="he"] {
+        font-size: 20px; /* Smaller font size for mobile */
+        line-height: 1.8;
+        padding-right: 4vw; /* Adjust padding for better readability */
+    }
+
+    /* Image at the end - adjust size for mobile */
+    .qa-img {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    /* Separation line on mobile */
+    hr.seperate-line {
+        margin: 40px auto;
+    }
+
+    /* Adjust Hebrew section layout */
+    #qa .hebrew-section {
+        padding-right: 4vw; /* Adjust padding for mobile */
+    }
+
+    #qa .hebrew-section p {
+        font-size: 20px; /* Adjust font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    /* Adjust list for Hebrew section */
+    #qa .hebrew-list ol {
+        padding-right: 30px;
+    }
+
+    #qa .hebrew-list li {
+        font-size: 18px; /* Adjust font size for mobile */
+    }
+}
+
+
 /************************************ Mail and Messages ******************************************************/
+
+#contact > h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    padding: 0 6vw;
+    text-align: center; 
+}
+/* Inner content padding for Contact */
+.inner-contact {
+    padding: 0 6vw;  /* Add small left-right padding */
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Arrange each label + input/textarea on one row */
 .form-row {
@@ -519,6 +848,63 @@ hr.seperate-line {
 	transform: scale(1.07);
 	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
   }
+
+  /************************ QA Mobile ********************/
+  /* Mobile responsiveness for Contact section */
+@media (max-width: 600px) {
+    #contact > h2 {
+        font-size: 36px; /* Adjust header size for smaller screens */
+        padding: 0 5vw;
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack label and input vertically */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .form-row label {
+        font-size: 24px; /* Adjust label font size */
+    }
+
+    .form-row input,
+    .form-row textarea {
+        font-size: 18px;
+        padding: 8px;
+        width: 100%; /* Make input fields full-width */
+        max-width: 100%; /* Ensure they scale properly */
+    }
+
+    .form-row textarea {
+        height: 150px;
+    }
+
+    .emoji-container {
+        top: 10px;
+        left: 6px;
+    }
+
+    .emoji-btn {
+        font-size: 18px;
+        padding: 4px 6px;
+    }
+
+    #charCounter {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+
+    form button[type="submit"] {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    /* Adjust the inner contact padding for mobile */
+    .inner-contact {
+        padding: 0 6vw;
+    }
+}
+
   /************************************ Contact Details ******************************************************/
   .contact-details {
 	font-size: 20px;
@@ -564,3 +950,46 @@ hr.seperate-line {
 	width: fit-content;
 	padding-bottom: 12px;
   }
+  /* Mobile */
+@media (max-width: 600px) {
+    /* Contact details container */
+    .contact-details {
+        font-size: 18px; /* Smaller font size for mobile */
+        margin-top: 40px;
+        padding: 0 5vw; /* Add some padding to make content fit well */
+    }
+
+    /* Contact details heading */
+    .contact-details h3 {
+        font-size: 22px; /* Adjust heading size for mobile */
+        margin-bottom: 20px;
+    }
+
+    /* Contact list font and layout */
+    .contact-list {
+        font-size: 16px; /* Adjust font size for readability */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Contact list items */
+    .contact-list li {
+        display: block; /* Stack the list items vertically */
+        border-bottom: none; /* Remove the dashed line on mobile */
+        margin-bottom: 15px;
+        padding-left: 0;
+        padding-bottom: 12px;
+    }
+
+    /* Add a little space between the list items */
+    .contact-list li b {
+        font-size: 18px; /* Slightly larger for the labels */
+        color: #2b3447;
+    }
+
+    /* Adjust the layout of the dashed lines on mobile */
+    .contact-list li:not(:last-child) {
+        border-bottom: none; /* No need for border on mobile */
+    }
+}
+
